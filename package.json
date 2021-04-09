@@ -1,0 +1,26 @@
+{
+  "name": "ng-laravel-pagination",
+  "version": "0.0.1",
+  "description": "Angular Pagination based on Laravel Pagination",
+  "author": "Ridwanul Hafiz",
+  "repogitory": {
+    "type": "git",
+    "url": "https://github.com/rdhafiz/ng-laravel-pagination"
+  },
+  "peerDependencies": {
+    "@angular/common": "^11.0.9",
+    "@angular/core": "^11.0.9"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
+  "license": "MIT",
+  "main": "bundles/ng-laravel-pagination.umd.js",
+  "module": "fesm2015/ng-laravel-pagination.js",
+  "es2015": "fesm2015/ng-laravel-pagination.js",
+  "esm2015": "esm2015/ng-laravel-pagination.js",
+  "fesm2015": "fesm2015/ng-laravel-pagination.js",
+  "typings": "ng-laravel-pagination.d.ts",
+  "metadata": "ng-laravel-pagination.metadata.json",
+  "sideEffects": false
+}
