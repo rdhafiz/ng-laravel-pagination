@@ -1,24 +1,48 @@
-# NgLaravelPagination
+[![Build Status](https://travis-ci.org/gilbitron/ng-laravel-pagination.svg?branch=master)](https://travis-ci.org/gilbitron/laravel-vue-pagination) 
+[![npm](https://img.shields.io/npm/v/laravel-vue-pagination.svg)](https://www.npmjs.com/package/laravel-vue-pagination) 
+[![Downloads](https://img.shields.io/npm/dt/ng-laravel-pagination.svg)](https://www.npmjs.com/package/ng-laravel-pagination)
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.9.
 
-## Code scaffolding
+# Ng Laravel Pagination
 
-Run `ng generate component component-name --project ng-laravel-pagination` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ng-laravel-pagination`.
-> Note: Don't forget to add `--project ng-laravel-pagination` or else it will be added to the default project in your `angular.json` file. 
+A Angular pagination component for Laravel paginator that works with Bootstrap.
 
-## Build
+## Install
 
-Run `ng build ng-laravel-pagination` to build the project. The build artifacts will be stored in the `dist/` directory.
+```angular2html
+npm install ng-laravel-pagination
+``` 
 
-## Publishing
+## Usage
 
-After building your library with `ng build ng-laravel-pagination`, go to the dist folder `cd dist/ng-laravel-pagination` and run `npm publish`.
+#### Use the component:
+```angular2html
+<ng-laravel-pagination [data]="laravelData" (changePage)="changePage($event)"></ng-laravel-pagination>
+```
 
-## Running unit tests
+#### Callback Events
 
-Run `ng test ng-laravel-pagination` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```javascript
+    changePage(pagination): void {
+        console.log(pagination);
+    }
+```
 
-## Further help
+## API
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+#### Props
+
+| Name | Type | Description |
+| --- | --- | --- |
+| `data` | Object | An object containing the structure of a [Laravel paginator](https://laravel.com/docs/5.7/pagination) response or a [Laravel API Resource](https://laravel.com/docs/5.7/eloquent-resources) response. |
+
+### Events
+
+| Name | Description |
+| --- | --- |
+| `changePage` | Triggered when a user changes page. Passes the new `pagination` object as a parameter. |
+
+
+## License
+
+Released under the MIT License, see [LICENSE](LICENSE).
