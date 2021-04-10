@@ -16,16 +16,16 @@ npm install ng-laravel-pagination
 ## Usage
 
 #### Use the component:
-```
+```angular2html
 <ng-laravel-pagination [data]="laravelData" (changePage)="changePage($event)"></ng-laravel-pagination>
 ```
 
 #### Callback Events
 
 ```javascript
-changePage(pagination): void {
-    console.log(pagination);
-}
+    changePage(pagination): void {
+        console.log(pagination);
+    }
 ```
 
 ## API
