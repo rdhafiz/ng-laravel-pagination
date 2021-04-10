@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/gilbitron/ng-laravel-pagination.svg?branch=master)](https://travis-ci.org/gilbitron/laravel-vue-pagination) 
-[![npm](https://img.shields.io/npm/v/laravel-vue-pagination.svg)](https://www.npmjs.com/package/laravel-vue-pagination) 
+[![Build Status](https://travis-ci.org/gilbitron/ng-laravel-pagination.svg?branch=master)](https://travis-ci.org/gilbitron/ng-laravel-pagination) 
+[![npm](https://img.shields.io/npm/v/ng-laravel-pagination.svg)](https://www.npmjs.com/package/ng-laravel-pagination) 
 [![Downloads](https://img.shields.io/npm/dt/ng-laravel-pagination.svg)](https://www.npmjs.com/package/ng-laravel-pagination)
 
 
@@ -31,7 +31,7 @@ import {NgLaravelPaginationModule} from 'ng-laravel-pagination';
 
 #### Use the component:
 ```angular2html
-<ng-laravel-pagination [data]="laravelData" (changePage)="changePage($event)"></ng-laravel-pagination>
+<ng-laravel-pagination [data]="laravelData" align="right" [pageDesc]="true" (changePage)="changePage($event)"></ng-laravel-pagination>
 ```
 
 #### Callback Events
@@ -46,9 +46,11 @@ changePage(pagination): void {
 
 #### Props
 
-| Name | Type | Description |
-| --- | --- | --- |
-| `data` | Object | An object containing the structure of a [Laravel paginator](https://laravel.com/docs/5.7/pagination) response or a [Laravel API Resource](https://laravel.com/docs/5.7/eloquent-resources) response. |
+| Name | Type | Default |Description |
+| --- | --- | --- | --- |
+| `data` | Object |  | An object containing the structure of a [Laravel paginator](https://laravel.com/docs/5.7/pagination) response or a [Laravel API Resource](https://laravel.com/docs/5.7/eloquent-resources) response. |
+| `align` | string | ```right``` | Define the alignment of the pagination content. |
+| `pageDesc` | boolean | ```true``` | Hide/Show Pagination description |
 
 ### Events
 

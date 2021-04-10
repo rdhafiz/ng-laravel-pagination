@@ -1,6 +1,6 @@
 {
   "name": "ng-laravel-pagination",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "description": "Angular Pagination based on Laravel Pagination",
   "author": "Ridwanul Hafiz",
   "repository": {
