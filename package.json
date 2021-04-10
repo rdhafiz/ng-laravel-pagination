@@ -1,12 +1,13 @@
 {
   "name": "ng-laravel-pagination",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Angular Pagination based on Laravel Pagination",
   "author": "Ridwanul Hafiz",
-  "repogitory": {
+  "repository": {
     "type": "git",
     "url": "https://github.com/rdhafiz/ng-laravel-pagination"
   },
+  "homepage": "https://github.com/rdhafiz/ng-laravel-pagination#readme",
   "peerDependencies": {
     "@angular/common": "^11.0.9",
     "@angular/core": "^11.0.9"
