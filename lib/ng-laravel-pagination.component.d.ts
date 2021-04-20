@@ -3,6 +3,7 @@ export declare class NgLaravelPaginationComponent {
     data: any;
     align: any;
     pageDesc: any;
+    theme: any;
     changePage: EventEmitter<any>;
     paginationLimit: number;
     alignmentClass: string;

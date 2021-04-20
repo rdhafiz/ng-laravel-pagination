@@ -49,8 +49,9 @@ changePage(pagination): void {
 | Name | Type | Default |Description |
 | --- | --- | --- | --- |
 | `data` | Object |  | An object containing the structure of a [Laravel paginator](https://laravel.com/docs/5.7/pagination) response or a [Laravel API Resource](https://laravel.com/docs/5.7/eloquent-resources) response. |
-| `align` | string | ```right``` | Define the alignment of the pagination content. |
-| `pageDesc` | boolean | ```true``` | Hide/Show Pagination description |
+| `align` | String | `right` | Define the alignment of the pagination content. |
+| `pageDesc` | Boolean | `true` | Hide/Show Pagination description |
+| `theme` | String | `theme-default` | Theme values are `theme-default` `theme-round` `theme-non-button` |
 
 ### Events
 
